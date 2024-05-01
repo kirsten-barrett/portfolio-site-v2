@@ -4,41 +4,14 @@
     margin: 0;
     padding: 0;
 }
-html {
-    color: #024d4a;
+.theme-default {
     background-color: #F0EDCC;
+    color: #024d4a;
 }
-
-/*
-RED:
-dark: #FFDFB9;
-light: #A4193D;
-
-DARK GREEN:
-dark: #F0EDCC;
-light: #024d4a;
-
-BLACK:
-dark: #000;
-light: #fff;
-
-COFFEE:
-dark: #755139;
-light: #F2EDD7;
-
-ORANGE:
-dark: #F95700;
-light: #fff;
-
-NEON GREEN: 
-dark: #9FC131;
-light: #EEDFE2
-
-BLUE: 
-dark: #2E3C7E;
-light: #FBEAEB;
-*/
-
+.theme-default-opposite {
+    color: #F0EDCC;
+    background-color: #024d4a;
+}
 body {
     margin: 0 auto;
     margin-top: 1rem;
@@ -63,6 +36,9 @@ body {
 }
 h1 {
     text-transform: uppercase;
+}
+.h1_header {
+    padding: 50px 0px;
 }
 h2 {
     text-transform: uppercase;
@@ -104,7 +80,7 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    border: 2px solid #024d4a;
+    border: 2px solid;
     border-radius: 50px;
     min-height: 350px;
     padding: 50px;
@@ -122,7 +98,7 @@ section {
     }
 }
 hr.solid {
-    border-top: 1px solid #024d4a;
+    border-top: 1px solid;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
@@ -140,21 +116,18 @@ li {
 ul {
     margin-top: 10px;
 }
-a.button {
-    background-color: #F0EDCC;
-    color:#024d4a;
-    border: 1px solid #024d4a;
-    border-radius: 20px;
-    padding: 8px 20px;
+.button {
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 0.7rem 2rem;
     font-size: 1rem;
     display: inline;
+    transition: all .2s;
 }
-a.button:hover {
-    background-color: #024d4a;
-    color:#F0EDCC;
-    border: 1px solid #024d4a;
+.button:hover {
+    font-size: 1.1rem;
 }
-div.dark, a.dark {
+div.dark, a.dark, .dark {
     background-color: #024d4a;
     color:#F0EDCC;
     border: 1px solid #024d4a;
@@ -176,6 +149,7 @@ ul.nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 0px;
+    margin-bottom: 10px;
 }
 header li {
     display: inline;
@@ -193,7 +167,7 @@ a {
 .about-me {
     display: flex;
     justify-content: flex-start;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 .profile-pic {
     max-width: 320px;
@@ -256,9 +230,7 @@ a {
 
 /*============== CONTACT =================*/
 .contact-box {
-    background-color: #F0EDCC;
-    color:#024d4a;
-    border: 2px solid #024d4a;
+    border: 2px solid;
     border-radius: 50px;
     padding: 30px;
     min-height: 300px;
@@ -277,6 +249,15 @@ a {
         flex-wrap: wrap;
     }
 }
+.fa-linkedin {
+    margin-right: 20px;
+}
+a > i {
+    transition: transform .2s;
+}
+a > i:hover {
+    transform: scale(1.2);
+}
 
 /*============= FOOTER =============*/
 footer {
@@ -288,24 +269,12 @@ footer {
 .container {
     height: 100%;
     width: 100%;
-    /*display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    background-color: purple;*/
 }
 .open-btn {
     font-size: 1rem;
-    background-color: #024d4a;
-    color:#F0EDCC;
-    border: 1px solid #024d4a;
-    border-radius: 20px;
+    font-family: Avenir, sans-serif;
     cursor: pointer;
-    padding: 8px 20px;
     float: right;
-    /*padding: 1rem 2.5rem;
-    border: 1px solid black;
-    border-radius: 50px;*/
 }
 .popup {
     position: fixed;
@@ -313,7 +282,6 @@ footer {
     height: 100%;
     left: 0px;
     bottom: 0;
-    /*background-color: brown;*/
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -329,46 +297,42 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 40%;
+    height: 35%;
     width: 16%;
     z-index: 1;
-    background-color: #024d4a;
+    background-color: #000;
     padding: 4rem 1rem;
     line-height: 1rem;
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
     transform: translateX(100%);
-    color: white;
+    color: #fff;
+    font-family: Avenir, sans-serif;
 }
-@media screen and (max-width: 1250px) and (min-width: 951px) {
-    .main-popup {
-        width: 30%;
-    }
+.main-popup span {
+    font-size: 1.2rem;
+    line-height: 3rem;
 }
-@media only screen and (max-width: 950px) and (min-width: 100px) {
+@media screen and (max-width: 1250px) and (min-width: 100px) {
     .main-popup {
-        width: 40%;
+        width: 100%;
     }
 }
 .close-btn {
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     right: 1rem;
-    font-size: 1rem;
     cursor: pointer;
     transition: .5s ease all;
 }
+span.close-btn {
+    font-size: 1rem;
+}
 .close-btn i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-right: 10px;
 }
 .close-btn:hover {
     color: white;
-}
-.popup-content {
-    font-size: 1.5rem;
-    line-height: 2rem;
 }
 @keyframes slide-in {
     0% {
@@ -403,21 +367,19 @@ footer {
 
 
 
-
-
-/* Slideshow container */
+/* Slideshow container
 .slideshow-container {
-    /*max-width: 1000px;*/
+    /*max-width: 1000px;
     position: relative;
     margin: auto;
   }
   
-  /* Hide the images by default */
+  /* Hide the images by default
   .mySlides {
     display: none;
   }
   
-  /* Caption text */
+  /* Caption text
   .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -428,11 +390,11 @@ footer {
     text-align: center;
   }
   
-  /* images */
+  /* images
   .darken-img {
     border-radius: 50px;
   }
-  /* Fading animation */
+  /* Fading animation
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -442,3 +404,33 @@ footer {
     from {opacity: .4}
     to {opacity: 1}
   }
+
+
+RED:
+dark: #FFDFB9;
+light: #A4193D;
+
+DARK GREEN:
+dark: #F0EDCC;
+light: #024d4a;
+
+BLACK:
+dark: #000;
+light: #fff;
+
+COFFEE:
+dark: #755139;
+light: #F2EDD7;
+
+ORANGE:
+dark: #F95700;
+light: #fff;
+
+NEON GREEN: 
+dark: #9FC131;
+light: #EEDFE2
+
+BLUE: 
+dark: #2E3C7E;
+light: #FBEAEB;
+*/

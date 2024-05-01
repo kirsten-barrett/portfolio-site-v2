@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-default">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
-    <script src="./script.js" defer></script>
+    <script src="./popup.js" defer></script>
+    <script src="./colorChange.js" defer></script>
     <title>Kirsten Barrett</title>
 </head>
 <body>
@@ -19,9 +20,33 @@
     </header>
 
     <hr class="solid">
+    <br>
+    <div class="btn">
+        <button class="open-btn theme-default-opposite button" >Change Color Theme</button>
+        
+    </div>
 
     <main>
         <section id="recent-work">
+
+            <div class="container">
+                <div class="popup">
+                    <div class="popup-overlay"></div>
+                    <div class="main-popup">
+                        <div class="popup-content">
+                            <span class="close-btn"><i class="fa-solid fa-caret-down"></i>HIDE OPTIONS</span>
+                            <span class="color-button coffee"><i class="fa-solid fa-toggle-off coffee-icon"></i>Coffee</span>
+                            <br>
+                            <span class="color-button bw"><i class="fa-solid fa-toggle-off bw-icon"></i>B&W</span>
+                            <br>
+                            <span class="color-button green"><i class="fa-solid fa-toggle-on green-icon"></i>Natural</span>
+                            <br><br>
+                            <!--<span class="color-button dark-mode"><i class="fa-solid fa-toggle-off dark-mode-icon"></i>Dark Mode</span>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <h2>Recent Projects</h2>
             <br>
             <div >
@@ -134,39 +159,29 @@
         <section id="contact">
             <h2>Contact</h2>
             <br>
-            <!--<form action="" method="post">
-                    <p>Send me an email:</p>
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" required>
-    
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject">
-    
-                    <label for="message">Message:</label>
-                    <input type="text" id="message">
-                </form>-->
             <div class="contact">
                 <div class="contact-box">
-                    <h3>Send me an email:</h3>
-                    <br>
-                    <a href="mailto:kirsten.barrett25@gmail.com" class="button dark">mailto: kirsten.barrett25@gmail.com</a>
+                    <center><h3>Send me an email:</h3>
+                    <br><br>
+                    <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite">mailto: kirsten.barrett25@gmail.com</a>
                     <br><br><br>
                     <h3>View my resume:</h3>
                     <br>
-                    <a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener" class="button">View My Resume</a>
+                    <a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener" class="button">View My Resume</a></center>
                 </div>
 
-                <div class="contact-box dark">
-                    <h3>Let's connect!</h3>
-                    <br>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-square-github"></i>
+                <div class="contact-box theme-default-opposite"">
+                    <center><h3>Let's connect!</h3>
+                    <br><br>
+                    <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/kirsten-barrett" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a></center>
                 </div>
 
             </div>
             <br><br>
 
             <hr class="solid">
+
         </section>
 
     </main>

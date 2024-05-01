@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-default">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
-    <script src="./script.js" defer></script>
     <script src="./popup.js" defer></script>
     <script src="./colorChange.js" defer></script>
     <title>Kirsten Barrett</title>
 </head>
-<body class="main">
+<body>
     <header>
         <a href="./index.html"><h1 class="logo">Kirsten Barrett</h1></a>
             <ul class="nav">
-                <li><a href="./projects.html">Work</a></li>
-                <li><a href="./blog.html">Articles</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="./projects.html" class="nav-item">Work</a></li>
+                <li><a href="./blog.html" class="nav-item">Articles</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
     </header>
 
     <hr class="solid">
     <br>
     <div class="btn">
-        <button class="open-btn">Change Color Theme</button>
+        <button class="open-btn theme-default-opposite button" >Change Color Theme</button>
         
     </div>
 
@@ -35,12 +34,14 @@
                     <div class="popup-overlay"></div>
                     <div class="main-popup">
                         <div class="popup-content">
-                            <span class="close-btn"><i class="fa-solid fa-caret-down"></i>CLOSE</span>
+                            <span class="close-btn"><i class="fa-solid fa-caret-down"></i>HIDE OPTIONS</span>
                             <span class="color-button coffee"><i class="fa-solid fa-toggle-off coffee-icon"></i>Coffee</span>
+                            <br>
+                            <span class="color-button bw"><i class="fa-solid fa-toggle-off bw-icon"></i>B&W</span>
+                            <br>
+                            <span class="color-button green"><i class="fa-solid fa-toggle-on green-icon"></i>Natural</span>
                             <br><br>
-                            <span class="color-button vibrant"><i class="fa-solid fa-toggle-off vibrant-icon"></i>Vibrant</span>
-                            <br><br>
-                            <span class="color-button green"><i class="fa-solid fa-toggle-off green-icon"></i>Original</span>
+                            <!--<span class="color-button dark-mode"><i class="fa-solid fa-toggle-off dark-mode-icon"></i>Dark Mode</span>-->
                         </div>
                     </div>
                 </div>
@@ -53,7 +54,7 @@
                     </div>
     
                     <div>
-                        <img src="./images/signature.png" alt="signature" class="signature">
+                        <img src="./images/signature_green_dark.png" alt="signature" class="signature">
                         <br><br>
                         <p>I am an experienced Web Developer currently pursuing a certification in Full-Stack Software Engineering. I have a strong background in visual design and have combined these skills with a talent for technical coding and problem-solving. Over the years I have practiced various computer languages and software programs in both work and play which has positioned me as a well-rounded developer looking for meaningful projects and collaborations.</p>
                     </div>
@@ -80,7 +81,7 @@
                             <li>WordPress, GoDaddy </li>
                         </ul>
                         <br>
-                        <a href="#" target="_blank" rel="noopener" class="button dark">Live Link</a>
+                        <a href="#" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
                         </div>
 
                     <div class="proj-img-div client-site-img">
@@ -102,8 +103,8 @@
                             <li>list</li>
                         </ul>
                         <br>
-                        <a href="#" target="_blank" rel="noopener" class="button dark">GitHub Repo</a>
-                        <a href="#" target="_blank" rel="noopener" class="button">???</a>
+                        <a href="#" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
+                        <a href="#" target="_blank" rel="noopener" class="button theme-default">???</a>
                     </div>
     
                     <div class="proj-img-div color-picker-img">
@@ -125,8 +126,8 @@
                             <li>Git & GitHub Pages</li>
                         </ul>
                         <br>
-                        <a href="https://kirsten-barrett.github.io/random-message/" target="_blank" rel="noopener" class="button dark">Live Link</a>
-                        <a href="https://github.com/kirsten-barrett/random-message" target="_blank" rel="noopener" class="button">GitHub Repo</a>
+                        <a href="https://kirsten-barrett.github.io/random-message/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
+                        <a href="https://github.com/kirsten-barrett/random-message" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
                     </div>
     
                     <div class="proj-img-div random-message-img">
@@ -153,7 +154,7 @@
 
 
             <br><br><br><br>
-            <center><a href="./projects.html" class="button dark">More of Kirsten's Projects</a></center>
+            <center><a href="./projects.html" class="button theme-default-opposite">More of Kirsten's Projects</a></center>
             <br><br><br><br>
 
             <hr class="solid">
@@ -178,33 +179,22 @@
         <section id="contact">
             <h2>Contact</h2>
             <br>
-            <!--<form action="" method="post">
-                    <p>Send me an email:</p>
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" required>
-    
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject">
-    
-                    <label for="message">Message:</label>
-                    <input type="text" id="message">
-                </form>-->
             <div class="contact">
                 <div class="contact-box">
-                    <h3>Send me an email:</h3>
-                    <br>
-                    <a href="mailto:kirsten.barrett25@gmail.com" class="button dark">mailto: kirsten.barrett25@gmail.com</a>
+                    <center><h3>Send me an email:</h3>
+                    <br><br>
+                    <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite">mailto: kirsten.barrett25@gmail.com</a>
                     <br><br><br>
                     <h3>View my resume:</h3>
                     <br>
-                    <a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener" class="button">View My Resume</a>
+                    <a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener" class="button theme-default">View My Resume</a></center>
                 </div>
 
-                <div class="contact-box dark">
-                    <h3>Let's connect!</h3>
-                    <br>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-square-github"></i>
+                <div class="contact-box theme-default-opposite"">
+                    <center><h3>Let's connect!</h3>
+                    <br><br>
+                    <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/kirsten-barrett" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a></center>
                 </div>
 
             </div>

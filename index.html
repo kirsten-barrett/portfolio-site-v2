@@ -24,30 +24,29 @@
     <div class="btn">
         <button class="open-btn theme-default-opposite button" id="open-btn">Change Color Theme</button>
         
+        <div class="container">
+            <div id="popup" class="popup">
+                <div class="popup-overlay"></div>
+                <div class="theme-default-opposite main-popup" id="main-popup">
+                    <div class="popup-content">
+                        <span id="close-btn" class="close-btn"><i class="fa-solid fa-caret-down"></i>HIDE OPTIONS</span>
+                        <span class="color-button coffee"><i class="fa-solid fa-toggle-off coffee-icon"></i>Coffee</span>
+                        <br>
+                        <span class="color-button bw"><i class="fa-solid fa-toggle-off bw-icon"></i>B&W</span>
+                        <br>
+                        <span class="color-button green"><i class="fa-solid fa-toggle-on green-icon"></i>Natural</span>
+                        <br><br>
+                        <!--<span class="color-button dark-mode"><i class="fa-solid fa-toggle-off dark-mode-icon"></i>Dark Mode</span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
     <main>
         <section>
-
-            <div class="container">
-                <div id="popup" class="popup">
-                    <div class="popup-overlay"></div>
-                    <div class="theme-default-opposite main-popup" id="main-popup">
-                        <div class="popup-content">
-                            <span id="close-btn" class="close-btn"><i class="fa-solid fa-caret-down"></i>HIDE OPTIONS</span>
-                            <span class="color-button coffee"><i class="fa-solid fa-toggle-off coffee-icon"></i>Coffee</span>
-                            <br>
-                            <span class="color-button bw"><i class="fa-solid fa-toggle-off bw-icon"></i>B&W</span>
-                            <br>
-                            <span class="color-button green"><i class="fa-solid fa-toggle-on green-icon"></i>Natural</span>
-                            <br><br>
-                            <!--<span class="color-button dark-mode"><i class="fa-solid fa-toggle-off dark-mode-icon"></i>Dark Mode</span>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="about-me" class="about-me">
+            <div class="about-me">
                 <div class="grid-1-2">
                     <div>
                         <img src="./images/headshot_green.jpg" alt="Kirsten Barrett" class="profile-pic">

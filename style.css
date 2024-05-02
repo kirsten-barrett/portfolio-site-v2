@@ -58,6 +58,7 @@ section {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     align-items: center;
+    justify-content: center;
 }
 @media only screen and (max-width: 845px) {
     .grid-1-2 {
@@ -131,6 +132,7 @@ ul.nav {
 header li {
     display: inline;
     font-weight: bold;
+    margin: 10px;
 }
 header li:hover {
     text-decoration: underline;
@@ -142,8 +144,6 @@ a {
 
 /*============ HP - INTRO ==============*/
 .about-me {
-    display: flex;
-    justify-content: flex-start;
     margin-top: 50px;
 }
 @media only screen and (max-width: 1400px) {

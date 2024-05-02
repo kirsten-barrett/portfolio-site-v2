@@ -7,6 +7,8 @@
 .theme-default {
     background-color: #F0EDCC;
     color: #024d4a;
+    /*color: #2c365e;
+    background-color: #e7e6f7;*/
 }
 .theme-default-opposite {
     color: #F0EDCC;
@@ -18,6 +20,7 @@ body {
     margin-bottom: 1rem;
     font-size: 18px;
     font-family: Avenir, sans-serif;
+    overflow-x: hidden;
 }
 @media only screen and (min-width: 1251px) {
     body {
@@ -29,7 +32,7 @@ body {
         width: 80%;
     }
 }
-@media only screen and (max-width: 950px) and (min-width: 100px) {
+@media only screen and (max-width: 950px) and (min-width: 50px) {
     body {
         width: 90%;
     }
@@ -87,10 +90,6 @@ section {
     width: 100%;
     margin: 0 auto;
 }
-/*.flex-box-proj:hover {
-    background-color: #024d4a;
-    color:#F0EDCC;
-}*/
 @media only screen and (max-width: 845px) {
     .flex-box-proj {
         flex-wrap: wrap-reverse;
@@ -123,6 +122,13 @@ ul {
     font-size: 1rem;
     display: inline;
     transition: all .2s;
+    text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+    .button {
+        display: block;
+        margin: 5px 0;
+    }
 }
 .button:hover {
     font-size: 1.1rem;
@@ -148,7 +154,7 @@ header {
 ul.nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 0px;
+    column-gap: 00px;
     margin-bottom: 10px;
 }
 header li {
@@ -167,7 +173,12 @@ a {
 .about-me {
     display: flex;
     justify-content: flex-start;
-    margin-top: 60px;
+    margin-top: 50px;
+}
+@media only screen and (max-width: 1400px) {
+    .about-me {
+        margin-top: 80px;
+    }
 }
 .profile-pic {
     max-width: 320px;
@@ -186,11 +197,14 @@ a {
     height: 250px;
     min-width: 300px;
 }
-.client-site-img {
+.travel-client-img {
     background-image: url(./images/cosmos.jpg);
 }
 .color-picker-img {
-    background-image: url(./images/rosco.jpg);
+    background-image: url(./images/website-theme-changer.png);
+}
+.mold-client-img {
+    background-image: url(./images/safer-home-services.png);
 }
 .random-message-img {
     background-image: url(./images/random-message-proj.jpg);
@@ -288,7 +302,7 @@ footer {
     display: none;
 }
 .popup-overlay {
-    /*background-color: rgba(0, 0, 0, 0.575);*/
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -300,12 +314,10 @@ footer {
     height: 35%;
     width: 16%;
     z-index: 1;
-    background-color: #000;
     padding: 4rem 1rem;
     line-height: 1rem;
     display: flex;
     transform: translateX(100%);
-    color: #fff;
     font-family: Avenir, sans-serif;
 }
 .main-popup span {
@@ -361,8 +373,41 @@ span.close-btn {
 }
 
 
-
-
+/*======== ICON CAROUSEL ==========*/
+.skills {
+    overflow-wrap: normal;
+}
+.skills-slider{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*width: calc(4rem * 24);*/
+}
+.skills-slider i {
+    margin: 3rem;
+    text-align: center;
+    /*animation: 10s slider infinite linear;*/
+}
+@media only screen and (max-width: 1000px) {
+    .skills-slider i {
+        margin: 1.2rem;
+    }
+}
+.skills-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: Avenir, sans-serif;
+}
+/*@keyframes slider {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-4rem * 24));
+    }
+}
 
 
 

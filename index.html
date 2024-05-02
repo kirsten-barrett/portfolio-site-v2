@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous" defer></script>
     <script src="./popup.js" defer></script>
     <script src="./colorChange.js" defer></script>
     <title>Kirsten Barrett</title>
@@ -22,7 +22,7 @@
     <hr class="solid">
     <br>
     <div class="btn">
-        <button class="open-btn theme-default-opposite button" >Change Color Theme</button>
+        <button class="open-btn theme-default-opposite button" id="open-btn">Change Color Theme</button>
         
     </div>
 
@@ -30,11 +30,11 @@
         <section>
 
             <div class="container">
-                <div class="popup">
+                <div id="popup" class="popup">
                     <div class="popup-overlay"></div>
-                    <div class="main-popup">
+                    <div class="theme-default-opposite main-popup" id="main-popup">
                         <div class="popup-content">
-                            <span class="close-btn"><i class="fa-solid fa-caret-down"></i>HIDE OPTIONS</span>
+                            <span id="close-btn" class="close-btn"><i class="fa-solid fa-caret-down"></i>HIDE OPTIONS</span>
                             <span class="color-button coffee"><i class="fa-solid fa-toggle-off coffee-icon"></i>Coffee</span>
                             <br>
                             <span class="color-button bw"><i class="fa-solid fa-toggle-off bw-icon"></i>B&W</span>
@@ -69,22 +69,22 @@
             <br>
             <div >
 
-                <div class="flex-box-proj">
+                <div class="flex-box-proj turn-dark">
                     <div>
                         <h3>Client Travel Website</h3>
                         <br>
-                        <p class="proj-desc">This is a custom website I developed for a client who creates travel packages. I worked closely with their designer to actualize their ideas and produce custom code.</p>
+                        <p class="proj-desc">This is a custom website I developed from start to finish for a client who creates travel packages. I worked closely with their designer to actualize their ideas and produce custom code.</p>
                         <br>
                         <p>Specifications:</p>
                         <ul>
-                            <li>HTML & Custom CSS</li>
-                            <li>WordPress, GoDaddy </li>
+                            <li>Custom HTML & CSS</li>
+                            <li>WordPress & GoDaddy </li>
                         </ul>
                         <br>
-                        <a href="#" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
+                        <a href="https://cosmopolitours.com/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
                         </div>
 
-                    <div class="proj-img-div client-site-img">
+                    <div class="proj-img-div travel-client-img">
                     </div>
                 </div>
 
@@ -92,19 +92,19 @@
                
                 <br>
 
-                <div class="flex-box-proj">
+                <div class="flex-box-proj turn-dark">
                     <div>
-                        <h3>Color Theme Picker</h3>
-                        <p class="proj-desc">The color picker is a project I develpoed on my own out of curiousity and interest. My goal was to design it for my own portfolio site to allow users to customize their viewing experience.</p>
+                        <h3>Website Theme Feature</h3>
+                        <p class="proj-desc">This is a feature I wanted to develop for my own personal site. I decided to build it out to be reusable. It allows users to be able to change the color theme of the website.</p>
                         <br>
                         <p>Specifications:</p>
                         <ul>
-                            <li>Javascript, HTML, & CSS</li>
-                            <li>list</li>
+                            <li>VanillaJS, HTML, & CSS</li>
+                            <li>Git, GitHub, & GitHub Pages</li>
                         </ul>
                         <br>
-                        <a href="#" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
-                        <a href="#" target="_blank" rel="noopener" class="button theme-default">???</a>
+                        <a href="https://github.com/kirsten-barrett/website-theme-changer" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
+                        <a href="https://kirsten-barrett.github.io/website-theme-changer/" target="_blank" rel="noopener" class="button theme-default">Live Demo</a>
                     </div>
     
                     <div class="proj-img-div color-picker-img">
@@ -115,10 +115,32 @@
     
                 <br>
 
-                <div class="flex-box-proj">
+                <div class="flex-box-proj turn-dark">
+                    <div>
+                        <h3>Client Service Website</h3>
+                        <p class="proj-desc">This is a website I planned and developed for a client after discussing their goals for design, functionality, and main purpose of their site.</p>
+                        <br>
+                        <p>Specifications:</p>
+                        <ul>
+                            <li>Wordpress Themes & Plugins</li>
+                            <li>Custom HTML & CSS</li>
+                        </ul>
+                        <br>
+                        <a href="https://saferhomesllc.com/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
+                    </div>
+    
+                    <div class="proj-img-div mold-client-img">
+                    </div>
+                </div>
+
+                <br>
+    
+                <br>
+
+                <div class="flex-box-proj turn-dark">
                     <div>
                         <h3>Random Message Generator</h3>
-                        <p class="proj-desc">This project was practice using JS with HTML & CSS. The output displays today's date and generates a random message & ASCII face on each page load.</p>
+                        <p class="proj-desc">REPLACE WITH PORTFOLIO SITE OR REACT/API. This project was practice using JS with HTML & CSS. The output displays today's date and generates a random message & ASCII face on each page load.</p>
                         <br>
                         <p>Specifications:</p>
                         <ul>
@@ -126,8 +148,8 @@
                             <li>Git & GitHub Pages</li>
                         </ul>
                         <br>
-                        <a href="https://kirsten-barrett.github.io/random-message/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
-                        <a href="https://github.com/kirsten-barrett/random-message" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
+                        <a href="https://github.com/kirsten-barrett/random-message" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
+                        <a href="https://kirsten-barrett.github.io/random-message/" target="_blank" rel="noopener" class="button theme-default">Live Demo</a>
                     </div>
     
                     <div class="proj-img-div random-message-img">
@@ -154,43 +176,95 @@
 
 
             <br><br><br><br>
-            <center><a href="./projects.html" class="button theme-default-opposite">More of Kirsten's Projects</a></center>
+            <center><a href="./projects.html" class="button theme-default-opposite">Load More Projects...</a></center>
             <br><br><br><br>
 
             <hr class="solid">
         </section>
 
-        <section id="tech-stack">
+        <section>
+
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skills-slider">
+                    <div>
+                        <i class="fa-brands fa-html5"><p class="skills-text">HTML</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-css3-alt"><p class="skills-text">CSS</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-square-js"><p class="skills-text">JavaScript</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-react"><p class="skills-text">React</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-git"><p class="skills-text">Git</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github"><p class="skills-text">GitHub</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chart-simple"><p class="skills-text">Google <br>Analytics</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-searchengin"><p class="skills-text">SEO</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-wordpress"><p class="skills-text">WordPress</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-shopify"><p class="skills-text">Shopify</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-figma"><p class="skills-text">Figma</p></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-palette"><p class="skills-text">Adobe <br>Creative <br>Cloud</p></i>
+                    </div>
+                </div>
+            </div>
+            <!--
             <h2>My Skills</h2>
             <br>
             <div class="icon-list">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-square-js"></i>
-                <i class="fa-brands fa-react"></i>
-                <i class="fa-brands fa-git"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-solid fa-terminal"></i>
+                <i class="fa-brands fa-html5"></i><p>HTML</p>
+                <i class="fa-brands fa-css3-alt"></i><p>CSS</p>
+                <i class="fa-brands fa-square-js"></i><p>JavaScript</p>
+                <i class="fa-brands fa-react"></i><p>React</p>
+                <i class="fa-brands fa-git"></i><p>Git</p>
+                <i class="fa-brands fa-github"></i><p>GitHub</p>
+                <i class="fa-solid fa-chart-simple"></i><p>Google Analytics</p>
+                <i class="fa-brands fa-searchengin"></i><p>SEO</p>
+                <i class="fa-brands fa-wordpress"></i><p>WordPress</p>
+                <i class="fa-brands fa-shopify"></i><p>Shopify</p>
+                <i class="fa-brands fa-figma"></i><p>Figma</p>
+                <i class="fa-solid fa-palette"></i><p>Adobe Creative Cloud</p>
             </div>
-            <br><br>
+
+            <br><br>-->
             <hr class="solid">
         </section>
+
+
+
 
         <section id="contact">
             <h2>Contact</h2>
             <br>
             <div class="contact">
-                <div class="contact-box">
+                <div class="contact-box turn-dark">
                     <center><h3>Send me an email:</h3>
                     <br><br>
-                    <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite">mailto: kirsten.barrett25@gmail.com</a>
+                    <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite">kirsten.barrett25@gmail.com</a>
                     <br><br><br>
                     <h3>View my resume:</h3>
                     <br>
                     <a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener" class="button theme-default">View My Resume</a></center>
                 </div>
 
-                <div class="contact-box theme-default-opposite"">
+                <div class="contact-box theme-default-opposite turn-light"">
                     <center><h3>Let's connect!</h3>
                     <br><br>
                     <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>

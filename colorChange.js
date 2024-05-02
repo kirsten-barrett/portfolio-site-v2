@@ -136,3 +136,30 @@ darkModeButton.addEventListener('click', () => {
   }
 })
 */
+
+
+
+// light/dark box hovers
+const turnDark = document.querySelectorAll('.turn-dark');
+const turnLight = document.querySelectorAll('.turn-light');
+
+turnDark.forEach((el) => el.addEventListener('mouseover', () => {
+  el.classList.add("theme-default-opposite");
+}));
+turnDark.forEach((el) => el.addEventListener('mouseout', () => {
+  el.classList.remove("theme-default-opposite");
+}));
+/*turnLight.forEach((el) => el.addEventListener('mouseover', () => {
+  el.classList.remove("theme-default-opposite");
+}));
+turnLight.forEach((el) => el.addEventListener('mouseout', () => {
+  el.classList.add("theme-default-opposite");
+}));
+
+/*
+turnDark.addEventListener('mouseover', () => {
+  turnDark.classList.add("theme-default-opposite");
+});
+turnDark.addEventListener('mouseout', () => {
+  turnDark.classList.remove("theme-default-opposite");
+});*/

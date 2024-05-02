@@ -62,6 +62,7 @@ section {
 @media only screen and (max-width: 845px) {
     .grid-1-2 {
         grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
         justify-items: center;
         align-items: center;
         text-align: center;
@@ -70,41 +71,11 @@ section {
         margin-top: 20px;
     }
 }
-.grid-2-1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    align-items: center;
-}
-.flex-box-proj {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    border: 2px solid;
-    border-radius: 50px;
-    min-height: 350px;
-    padding: 50px;
-    width: 100%;
-    margin: 0 auto;
-}
-@media only screen and (max-width: 845px) {
-    .flex-box-proj {
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-}
 hr.solid {
     border-top: 1px solid;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
-}
-hr.short {
-    width: 70%;
-    margin: 0 auto;
 }
 i {
     font-size: 4rem;
@@ -124,7 +95,7 @@ ul {
     transition: all .2s;
     text-align: center;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 845px) {
     .button {
         display: block;
         margin: 5px 0;
@@ -153,8 +124,8 @@ header {
 }
 ul.nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 00px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0px;
     margin-bottom: 10px;
 }
 header li {
@@ -181,12 +152,16 @@ a {
     }
 }
 .profile-pic {
-    max-width: 320px;
+    max-width: 300px;
     border-radius: 50px;
-    margin-right: 20px;
 }
 .signature {
     width: 400px;
+}
+@media only screen and (max-width: 845px) {
+    .signature {
+        width: 300px;
+    }
 }
 
 /*============= RECENT WORK ===============*/
@@ -195,7 +170,26 @@ a {
     background-position: center;
     border-radius: 50px;
     height: 250px;
-    min-width: 300px;
+    min-width: 250px;
+}
+.flex-box-proj {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 2px solid;
+    border-radius: 50px;
+    min-height: 350px;
+    padding: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 845px) {
+    .flex-box-proj {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        padding: 25px;
+    }
 }
 .travel-client-img {
     background-image: url(./images/cosmos.jpg);
@@ -261,6 +255,14 @@ a {
 @media only screen and (max-width: 845px) {
     .contact {
         flex-wrap: wrap;
+    }
+    .contact-box {
+        padding: 30px 5px;
+    }
+}
+@media only screen and (min-width: 845px) {
+    .second-contact {
+        margin-top: 50px;
     }
 }
 .fa-linkedin {

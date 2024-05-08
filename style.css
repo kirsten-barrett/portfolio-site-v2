@@ -130,6 +130,14 @@ nav {
     padding-top: 15px;
     z-index: 5;
 }
+@media only screen and (max-width: 386px) {
+    nav {
+        height: 100px;
+    }
+    header {
+        padding-bottom: 0px;
+    }
+}
 hr.nav-hr {
     border: 0.5px solid;
     margin: 0 auto;

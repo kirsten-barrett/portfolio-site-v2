@@ -3,186 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the meta description.">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous" defer></script>
-    <script src="./popup.js" defer></script>
-    <script src="./colorChange.js" defer></script>
+    <script src="./typeWriter.js" defer></script>
+    <script src="./emailButton.js" defer></script>
     <title>Kirsten Barrett</title>
 </head>
+
 <body>
-    <header>
-        <a href="./index.html"><h1 class="logo">Kirsten Barrett</h1></a>
+    <nav>
+        <header>
+            <h1 class="logo">Kirsten Barrett</h1>
             <ul class="nav">
-                <li><a href="./projects.html" class="nav-item">Work</a></li>
-                <!--<li><a href="./blog.html" class="nav-item">Articles</a></li>-->
-                <li><a href="#contact" class="nav-item">Contact</a></li>
+                <!--<li><a href="#" class="nav-item">CASE STUDIES</a></li>-->
+                <li><a href="#contact" class="nav-item">CONTACT</a></li>
             </ul>
-    </header>
-
-    <hr class="solid">
-    <br>
-    <div class="btn">
-        <button class="open-btn theme-default-opposite button" id="open-btn">Change Color Theme</button>
+        </header>
+        <hr class="nav-hr">
+    </nav>
         
-        <div class="container">
-            <div id="popup" class="popup">
-                <div class="popup-overlay"></div>
-                <div class="theme-default-opposite main-popup" id="main-popup">
-                    <div class="popup-content">
-                        <span id="close-btn" class="close-btn"><i class="fa-solid fa-caret-down"></i>HIDE OPTIONS</span>
-                        <span class="color-button coffee"><i class="fa-solid fa-toggle-off coffee-icon"></i>Coffee</span>
-                        <br>
-                        <span class="color-button bw"><i class="fa-solid fa-toggle-off bw-icon"></i>B&W</span>
-                        <br>
-                        <span class="color-button green"><i class="fa-solid fa-toggle-on green-icon"></i>Natural</span>
-                        <br><br>
-                        <!--<span class="color-button dark-mode"><i class="fa-solid fa-toggle-off dark-mode-icon"></i>Dark Mode</span>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
     <main>
-        <section>
+        <section> 
             <div class="about-me">
                 <div class="grid-1-2">
                     <div>
-                        <img src="./images/headshot_green.jpg" alt="Kirsten Barrett" class="profile-pic">
+                        <img src="./images/headshot_square.jpg" alt="Kirsten Barrett" class="profile-pic">
                     </div>
     
                     <div>
-                        <img src="./images/signature_green_dark.png" alt="signature" class="signature">
-                        <br><br>
-                        <p>I am an experienced Web Developer currently pursuing a certification in Full-Stack Software Engineering. I have a strong background in visual design and have combined these skills with a talent for technical coding and problem-solving. Over the years I have practiced various computer languages and software programs in both work and play which has positioned me as a well-rounded developer looking for meaningful projects and collaborations.</p>
+                        <img src="./images/signature_green.png" alt="signature" class="signature">
+                        <h2 id="elementEl">Web Developer</h2>
+                        <p>I am an experienced Web Developer currently pursuing a certification in Full-Stack Software Engineering. I have a strong background in visual design and have combined these skills with a talent for technical coding and problem-solving.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <hr class="solid">
+        <section id="recent-work" class="theme-default-opposite">
+            <h2 class="recent-work-title">Recent Projects</h2>
+            <div>
 
-        <section id="recent-work">
-            <h2>Recent Projects</h2>
-            <br>
-            <div >
-
-                <div class="flex-box-proj turn-dark">
+                <div class="flex-box-proj">
                     <div>
-                        <h3>Client Travel Website</h3>
-                        <br>
-                        <p class="proj-desc">This is a custom website I developed from start to finish for a client who creates travel packages. I worked closely with their designer to actualize their ideas and produce custom code.</p>
-                        <br>
-                        <p>Specifications:</p>
-                        <ul>
-                            <li>Custom HTML & CSS</li>
-                            <li>WordPress & GoDaddy </li>
-                        </ul>
-                        <br>
-                        <a href="https://cosmopolitours.com/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
-                        </div>
-
-                    <div class="proj-img-div travel-client-img">
+                        <h3>Artist Portfolio Website</h3>
+                        <p class="proj-desc">Short project description here for Henri Matisse. Short project description here for Henri Matisse Short project description here for Henri Matisse.</p>
+                        <a href="#" target="_blank" rel="noopener" class="button theme-default">Case Study</a>
+                        <a href="#" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
+                        <p class="specifications">Webflow | Figma</p>
                     </div>
+                    <div class="proj-img-div travel-client-img"></div>
                 </div>
 
-                <br>
-               
-                <br>
-
-                <div class="flex-box-proj turn-dark">
+                <div class="flex-box-proj">
                     <div>
                         <h3>Website Theme Feature</h3>
                         <p class="proj-desc">This is a feature I wanted to develop for my own personal site. I decided to build it out to be reusable. It allows users to be able to change the color theme of the website.</p>
-                        <br>
-                        <p>Specifications:</p>
-                        <ul>
-                            <li>VanillaJS, HTML, & CSS</li>
-                            <li>Git, GitHub, & GitHub Pages</li>
-                        </ul>
-                        <br>
-                        <a href="https://github.com/kirsten-barrett/website-theme-changer" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
                         <a href="https://kirsten-barrett.github.io/website-theme-changer/" target="_blank" rel="noopener" class="button theme-default">Live Demo</a>
+                        <a href="https://github.com/kirsten-barrett/website-theme-changer" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
+                        <p class="specifications">VanillaJS | HTML | CSS | Git | GitHub</p>
                     </div>
-    
-                    <div class="proj-img-div color-picker-img">
-                    </div>
+                    <div class="proj-img-div color-picker-img"></div>
                 </div>
 
-                <br>
-    
-                <br>
+                <div class="flex-box-proj">
+                    <div>
+                        <h3>Developer Portfolio Website</h3>
+                        <p class="proj-desc">This is a website I planned and developed for a client after discussing their goals for design, functionality, and main purpose of their site.</p>
+                        <a href="#" target="_blank" rel="noopener" class="button theme-default">Case Study</a>
+                        <a href="#" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
+                        <p class="specifications">HTML | CSS | VanillaJS | Git | GitHub</p>
+                    </div>
+                    <div class="proj-img-div random-message-img"></div>
+                </div>
 
-                <div class="flex-box-proj turn-dark">
+                <div class="flex-box-proj">
+                    <div>
+                        <h3>Client Travel Website</h3>
+                        <p class="proj-desc">This is a custom website I developed from start to finish for a client who creates travel packages. I worked closely with their designer to actualize their ideas and produce custom code.</p>
+                        <a href="https://cosmopolitours.com/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
+                        <p class="specifications">WordPress | Custom HTML & CSS | GoDaddy</p>
+                    </div>
+                    <div class="proj-img-div travel-client-img"></div>
+                </div>
+
+                <div class="flex-box-proj">
                     <div>
                         <h3>Client Service Website</h3>
                         <p class="proj-desc">This is a website I planned and developed for a client after discussing their goals for design, functionality, and main purpose of their site.</p>
-                        <br>
-                        <p>Specifications:</p>
-                        <ul>
-                            <li>Wordpress Themes & Plugins</li>
-                            <li>Custom HTML & CSS</li>
-                        </ul>
-                        <br>
                         <a href="https://saferhomesllc.com/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
+                        <p class="specifications">WordPress Theme & Plugins | Custom HTML & CSS</p>
                     </div>
-    
-                    <div class="proj-img-div mold-client-img">
-                    </div>
+                    <div class="proj-img-div mold-client-img"></div>
                 </div>
-
-                <br>
-    
-                <br>
-
-                <div class="flex-box-proj turn-dark">
-                    <div>
-                        <h3>Random Message Generator</h3>
-                        <p class="proj-desc">REPLACE WITH PORTFOLIO SITE OR REACT/API. This project was practice using JS with HTML & CSS. The output displays today's date and generates a random message & ASCII face on each page load.</p>
-                        <br>
-                        <p>Specifications:</p>
-                        <ul>
-                            <li>Javascript, HTML, & CSS</li>
-                            <li>Git & GitHub Pages</li>
-                        </ul>
-                        <br>
-                        <a href="https://github.com/kirsten-barrett/random-message" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
-                        <a href="https://kirsten-barrett.github.io/random-message/" target="_blank" rel="noopener" class="button theme-default">Live Demo</a>
-                    </div>
-    
-                    <div class="proj-img-div random-message-img">
-                    </div>
-                </div>
-        
-
-                <!-- Slideshow container 
-                <a href="./projects.html"><div class="slideshow-container">
-                    <!-- Full-width images with number and caption text
-                    <div class="mySlides fade">
-                        <img src="./images/rosco.jpg" style="width:100%" class="darken-img">
-                        <div class="text">Caption Two</div>
-                    </div>
-                
-                    <div class="mySlides fade">
-                        <img src="./images/random-message-proj.jpg" style="width:100%" class="darken-img">
-                        <div class="text">Caption Two</div>
-                    </div>
-            
-                </div></a>-->
 
             </div>
 
-
-            <br><br><br><br>
-            <center><a href="./projects.html" class="button theme-default-opposite">Load More Projects...</a></center>
-            <br><br><br><br>
-
-            <hr class="solid">
+            <br>
+            <div class="btn-container">
+                <a href="#" class="theme-default-opposite center-btn button">Load More Projects...</a>
+            </div>
+            <br>
+            
         </section>
 
-        <section>
-
+        <section class="skills-section">
             <h2>My Skills</h2>
             <div class="skills">
                 <div class="skills-slider">
@@ -224,64 +149,41 @@
                     </div>
                 </div>
             </div>
-            <!--
-            <h2>My Skills</h2>
-            <br>
-            <div class="icon-list">
-                <i class="fa-brands fa-html5"></i><p>HTML</p>
-                <i class="fa-brands fa-css3-alt"></i><p>CSS</p>
-                <i class="fa-brands fa-square-js"></i><p>JavaScript</p>
-                <i class="fa-brands fa-react"></i><p>React</p>
-                <i class="fa-brands fa-git"></i><p>Git</p>
-                <i class="fa-brands fa-github"></i><p>GitHub</p>
-                <i class="fa-solid fa-chart-simple"></i><p>Google Analytics</p>
-                <i class="fa-brands fa-searchengin"></i><p>SEO</p>
-                <i class="fa-brands fa-wordpress"></i><p>WordPress</p>
-                <i class="fa-brands fa-shopify"></i><p>Shopify</p>
-                <i class="fa-brands fa-figma"></i><p>Figma</p>
-                <i class="fa-solid fa-palette"></i><p>Adobe Creative Cloud</p>
-            </div>
-
-            <br><br>-->
             <hr class="solid">
         </section>
 
-
-
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <br>
+        <section>
+            <h2 class="contact-title">Contact</h2>
             <div class="contact">
-                <div class="contact-box turn-dark">
-                    <center><h3>Send me an email:</h3>
-                    <br>
-                    <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite">kirsten.barrett25@gmail.com</a>
-                    <br>
-                    <h3 class="second-contact">View my resume:</h3>
-                    <br>
-                    <a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener" class="button theme-default">View My Resume</a></center>
-                    <br>
+                <div class="contact-box">
+                    <h3 class="center">Send me an email:</h3>
+                    <div class="btn-container">
+                        <a href="mailto:kirsten.barrett25@gmail.com" class="button theme-default-opposite center-btn" id="email-btn">kirsten.barrett25@gmail.com</a>
+                    </div>
+                    <h3 class="second-contact center">View my resume:</h3>
+                    <div class="btn-container">
+                        <a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener" class="button theme-default-opposite center-btn">Kirsten's Google Doc</a>
+                    </div>
                 </div>
 
-                <div class="contact-box theme-default-opposite turn-light"">
-                    <center><h3>Let's connect!</h3>
-                    <br><br>
-                    <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/kirsten-barrett" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a></center>
-                    <br>
+                <div class="contact-box theme-default-opposite">
+                    <h3 class="center">Let's connect!</h3>
+                    <div class="icon-container">
+                        <a href="https://www.linkedin.com/in/kirsten-barrett/" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kirsten-barrett" target="_blank" rel="noopener" class="theme-default-opposite"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
                 </div>
-
             </div>
-            <br><br>
-
             <hr class="solid">
-
         </section>
 
     </main>
+
     <footer>
-        <p>© 2024 KIRSTEN BARRETT</p>
+        <section>
+            <p>© 2024 KIRSTEN BARRETT</p>
+        </section>
     </footer>
+
 </body>
 </html>

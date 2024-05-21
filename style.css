@@ -14,7 +14,7 @@
 }
 body {
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 90px;
     font-size: 18px;
     font-family: Avenir, sans-serif;
     overflow-x: hidden;
@@ -33,18 +33,18 @@ h3 {
 section {
     margin: 0 auto;
 }
-@media only screen and (min-width: 1251px) {
-    section, header, hr.nav-hr {
+@media only screen and (min-width: 1351px) {
+    section, nav, hr.nav-hr {
         width: 60%;
     }
 }
-@media screen and (max-width: 1250px) and (min-width: 951px) {
-    section, header, hr.nav-hr {
+@media screen and (max-width: 1350px) and (min-width: 951px) {
+    section, nav, hr.nav-hr {
         width: 80%;
     }
 }
 @media only screen and (max-width: 950px) and (min-width: 50px) {
-    section, header, hr.nav-hr, .profile-pic {
+    section, nav, hr.nav-hr, .profile-pic {
         width: 90%;
     }
 }
@@ -85,7 +85,7 @@ i {
     display: inline;
     transition: all .2s;
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1350px) {
     .button {
         display: block;
         margin: 15px 0;
@@ -95,7 +95,7 @@ i {
     font-size: 1.2rem;
 }
 a.theme-default {
-    border: 2px solid #000;
+    border: 1px solid #000;
     color:#000;
     background-color: #fff;
 }
@@ -107,57 +107,102 @@ a.theme-default {
     width: 100%;
     position: absolute;
 }
-/*============ HEADER ===========*/
-.logo {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+a {
+    text-decoration: none;
+    color: #000;
 }
+/*============ HEADER ===========*/
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    align-content: center;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    z-index: 5;
+}
+nav {
     margin: 0 auto;
     padding-bottom: 10px;
 }
-nav {
-    position: fixed;
-    background-color: #fff;
-    top: 0px;
-    height: 80px;
+.nav-bar {
     width: 100%;
-    padding-top: 15px;
-    z-index: 5;
-}
-@media only screen and (max-width: 386px) {
-    nav {
-        height: 100px;
-    }
-    header {
-        padding-bottom: 0px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
 }
 hr.nav-hr {
     border: 0.5px solid;
     margin: 0 auto;
 }
-a.nav-item {
-    color: #000;
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 12px 0px;
 }
-header li {
-    display: inline;
-    font-weight: bold;
-    margin: 5px;
+.menu {display: flex;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 400;
     padding: 10px 20px;
+    margin: 0px 5px;
 }
-header li:hover {
+.menu li a:hover {
     border: 1px solid #000;
     border-radius: 50px;
 }
-a {
-    text-decoration: none;
-    color: #000;
+.mobile-only {
+    display: none;
+}
+.open-menu, .close-menu {
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.open-menu i, .close-menu i {font-size: 1.5rem;}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;}
+@media (max-width: 700px) {
+    .menu {
+        flex-direction: column;
+        text-align: right;
+        align-items:right;
+        justify-content:center;
+        width: 80%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #000;
+        color: #fff;
+        transition: all .2s ease-in-out;
+    }
+    .menu li a:hover {
+        border: 1px solid #fff;
+        border-radius: 50px;
+        padding: 10px 20px;
+    }
+    .mobile-only {display: block;}
+    .menu li {margin-top: 60px;}
+    .menu li a {color: #fff;}
+    .open-menu, .close-menu {display: block;}
+    /*#check:checked ~ .menu {right: 0;}*/
 }
 /*============ ABOUT ME ==============*/
 .about-me {
@@ -173,38 +218,34 @@ a {
     width: 300px;
 }
 /*======== TYPING ==========*/
-#elementEl {
-    color:#9dca87; 
-    font-size: 2.8rem;
-    margin: 20px 0px;
+.type-container {
+    font-size: 3rem;
+    line-height: 3rem;
     text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0px;
+    color: #9dca87;
 }
-@media only screen and (max-width: 450px) {
-    h2#elementEl {
-        font-size: 1.8rem;
+@media only screen and (max-width: 475px){
+    .type-container {
+        font-size: 2rem;
+        line-height: 2rem;
     }
 }
-#elementEl::after {
-    content: '|';
-    margin-left: 5px;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
+.typed-cursor {
+    color: #9dca87;
+    padding-left: 5px;
 }
 /*============= RECENT WORK ===============*/
 #recent-work {
     width: 100%;
 }
-@media only screen and (min-width: 1251px) {
+@media only screen and (min-width: 1351px) {
     #recent-work {
         padding: 60px 20%;
     }
 }
-@media screen and (max-width: 1250px) and (min-width: 951px) {
+@media screen and (max-width: 1350px) and (min-width: 951px) {
     #recent-work {
         padding: 60px 10%;
     }
@@ -237,7 +278,7 @@ a {
     color: #000;
     background-color: #fff;
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1350px) {
     .flex-box-proj {
         flex-wrap: wrap-reverse;
         justify-content: center;
@@ -271,7 +312,7 @@ a {
     margin-top: 40px;
     font-family: 'Courier New', Courier, monospace;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1350px) {
     .proj-img-div {
         width: 100%;
     }
@@ -281,6 +322,9 @@ a {
 }
 @media only screen and (min-width: 845px) {
     .proj-desc {
+        margin-right: 20px;
+    }
+    .specifications {
         margin-right: 20px;
     }
 }
@@ -315,6 +359,9 @@ a {
     font-family: Avenir, sans-serif;
 }
 /*============== CONTACT =================*/
+#contact {
+    scroll-margin-top: 120px;
+}
 .contact-title {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -333,6 +380,7 @@ a {
     flex-wrap: nowrap;
     width: 100%;
     margin-bottom: 50px;
+    scroll-margin-top: 390px; 
 }
 @media only screen and (max-width: 845px) {
     .contact {
@@ -363,6 +411,11 @@ a > i:hover {
 .icon-container {
     display: flex;
     justify-content: center;
+}
+@media only screen and (max-width: 375px) {
+    #email-btn {
+        margin: 0px 0px 150px 0px;
+    }
 }
 /*============= FOOTER =============*/
 footer {

@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the meta description.">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- end google fonts-->
     <link rel="stylesheet" href="style.css">
     <title>Kirsten Barrett</title>
 </head>
@@ -12,10 +18,10 @@
     <header>
         <nav>
             <ul class="nav-bar">
-                <li class="logo">Kirsten Barrett</li>
+                <li><h1 class="logo">Kirsten Barrett</h1></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
-                    <li class="mobile-only"><a href="#">Case Studies</a></li>
+                    <li><a href="./case-studies.html">Case Studies</a></li>
                     <li class="mobile-only"><a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener">Resume</a></li>
                     <li for="check"><a href="#contact" onclick="menuClose()" class="anchor">Contact</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
@@ -28,7 +34,7 @@
         
     <main>
         <section> 
-            <div class="about-me">
+            <div class="first about-me">
                 <div class="grid-1-2">
                     <div>
                         <img src="./images/headshot_square.jpg" alt="Kirsten Barrett" class="profile-pic">
@@ -61,18 +67,18 @@
                         <p class="proj-desc">
                             This is a passion project meant to act as a sample of my work. It is a homepage demo of an artist portfolio website for the late Vincent van Gogh. Because of the copyright status of his work, I was able to have fun creating in lieu of legal agreements.
                         </p>
-                        <a href="#" target="_blank" rel="noopener" class="button theme-default-opposite">Case Study</a>
+                        <a href="./case-studies.html" class="button theme-default-opposite">Case Study</a>
                         <a href="https://kirsten-barrett.github.io/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Live Link</a>
                         <a href="https://github.com/kirsten-barrett/van-gogh-portfolio" target="_blank" rel="noopener" class="button theme-default">Github Repo</a>
                         <p class="specifications">Adobe Illustrator | HTML | CSS | JavaScript</p>
                     </div>
-                    <div class="proj-img-div travel-client-img"></div>
+                    <div class="proj-img-div artist-portfolio-img"></div>
                 </div>
 
                 <div class="flex-box-proj">
                     <div>
                         <h3>Website Theme Feature</h3>
-                        <p class="proj-desc">This is a feature I wanted to develop for my own personal use. I decided to build a sample version so it can be easily reusable as it only requires simple DOM re-rendering. This pop up allows users to be able to change the color theme of the website.</p>
+                        <p class="proj-desc">This is a feature I wanted to develop for my own personal use. I decided to build a sample version so it can be easily reusable as it only requires simple DOM manipulation. This pop up allows users to be able to change the color theme of the website.</p>
                         <a href="https://kirsten-barrett.github.io/website-theme-changer/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Demo</a>
                         <a href="https://github.com/kirsten-barrett/website-theme-changer" target="_blank" rel="noopener" class="button theme-default">GitHub Repo</a>
                         <p class="specifications">JavaScript | HTML | CSS | Git | GitHub</p>
@@ -83,17 +89,17 @@
                 <div class="flex-box-proj">
                     <div>
                         <h3>Developer Portfolio Website</h3>
-                        <p class="proj-desc">This is the website you are currently viewing. After a few iterations (and more to come), it acts as a home for my recent work. My goal was to utilize a simple design that mimics a resume.</p>
+                        <p class="proj-desc">This is the website you are currently viewing. After a few iterations (and more to come), it acts as a home for my recent work. My goal was to utilize a simple design that mimics a resume. Like the two websites above, it was built entirely by scratch.</p>
                         <a href="#" target="_blank" rel="noopener" class="button theme-default-opposite">GitHub Repo</a>
                         <p class="specifications">HTML | CSS | JavaScript | Git | GitHub</p>
                     </div>
-                    <div class="proj-img-div random-message-img"></div>
+                    <div class="proj-img-div developer-portfolio-img"></div>
                 </div>
 
                 <div class="flex-box-proj">
                     <div>
                         <h3>Client Travel Website</h3>
-                        <p class="proj-desc">This is a custom website I developed for a client who creates travel packages. I worked closely with their designer to actualize their ideas and produce custom code.</p>
+                        <p class="proj-desc">This is a custom website I developed for a client who had just done a rebrand of their company. I worked closely with their designer to actualize their ideas and produce custom code.</p>
                         <a href="https://cosmopolitours.com/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
                         <p class="specifications">WordPress | Custom HTML & CSS | GoDaddy</p>
                     </div>
@@ -103,7 +109,7 @@
                 <div class="flex-box-proj">
                     <div>
                         <h3>Client Service Website</h3>
-                        <p class="proj-desc">This is a website I planned and developed for a client after discussing their goals for design, functionality, and main purpose of their site. I collaborated closely with stakeholders and provided thorough and frequent updates throughout the process.</p>
+                        <p class="proj-desc">This is a website I planned and developed for a client after discussing their thoughts about design, functionality, and main purpose of their site. I collaborated closely with stakeholders and provided thorough and frequent updates throughout the process.</p>
                         <a href="https://saferhomesllc.com/" target="_blank" rel="noopener" class="button theme-default-opposite">Live Link</a>
                         <p class="specifications">WordPress Theme & Plugins | Custom HTML & CSS</p>
                     </div>
@@ -114,7 +120,7 @@
 
             <br>
             <div class="btn-container">
-                <a href="https://kirstenbarrett.myportfolio.com/" target="_blank" rel="noopener" class="theme-default-opposite center-btn button">View the Project Archive</a>
+                <a href="https://kirstenbarrett.myportfolio.com/" target="_blank" rel="noopener" class="theme-default-opposite center-btn button">View My Project Archive</a>
             </div>
             <br>
             
@@ -200,9 +206,9 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/29cf654041.js" crossorigin="anonymous"></script>
-    <script src="./typeWriter.js"></script>
-    <script src="./emailButton.js"></script>
-    <script src="./responsiveMenu.js"></script>
+    <script src="./script/typeWriter.js"></script>
+    <script src="./script/emailButton.js"></script>
+    <script src="./script/responsiveMenu.js"></script>
 
 </body>
 </html>

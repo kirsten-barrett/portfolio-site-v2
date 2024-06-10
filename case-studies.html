@@ -11,18 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- end google fonts-->
     <link rel="stylesheet" href="style.css">
-    <title>Kirsten Barrett</title>
+    <title>Case Studies | Kirsten Barrett</title>
 </head>
 
 <body>
     <header>
         <nav>
             <ul class="nav-bar">
-                <li class="logo"><a href="./index.html">Kirsten Barrett</a></li>
+                <li><a href="./index.html"><h1 class="logo">Kirsten Barrett</h1></a></li>
                 <input type="checkbox" id="check">
                 <span class="menu">
                     <li><a href="./case-studies.html">Case Studies</a></li>
-                    <li class="mobile-only"><a href="#">Case Studies</a></li>
                     <li class="mobile-only"><a href="https://docs.google.com/document/d/1bPOalnAEoHGM3An_o2mPALc71L8jyBTrzfRKql4Ed5I/edit" target="_blank" rel="noopener">Resume</a></li>
                     <li for="check"><a href="#contact" onclick="menuClose()" class="anchor">Contact</a></li>
                     <label for="check" class="close-menu"><i class="fas fa-times" onclick="menuClose()"></i></label>
@@ -33,66 +32,34 @@
         <hr class="nav-hr">
     </header>
         
-    <main class="case-study-page">
-        <div class="black">
-            <section> 
-                <div class="first case-study-intro flex">
-                    <div class="flex-left">
-                        <p>Artist Portfolio Site</p>
-                        <h2>Vincent van Gogh</h2>
-                        <br>
-                        <p>This is a passion project meant to act as a sample of my work. It is a homepage demo of an artist portfolio website for the late Vincent van Gogh. Because of the copyright status of his work, I was able to have fun creating in lieu of legal agreements.</p>
-                    </div>
-                    <div class="flex-right">
-                        <br>
-                        <p>Objectives:</p>
-                        <ul class="list">
-                            <li>Implement a fully-responsive and creative home for his work</li>
-                            <li>Provide a simple UI that promotes purchasing and user retention</li>
-                            <li>Keep users engaged with unique displays and interactivity</li>
-                            <li>Balance a simple UI with unique, eye-catching interactivity</li>
-                        </ul>
-                        <br>
-                    </div>
+    <main>
+        <section id="case-study">
+            <br><br>
+            <h1 class="center">Website Case Studies</h1>
+            <div class="case-studies">
+                <div class="case-study artist-portfolio">
+                    <a href="./van-gogh-portfolio.html"><div class="case-img-div artist-portfolio-img"></div></a>
                     <br>
-                    <a href="#" class="btn">view the live site</a>
-                    <a href="#" class="btn">github repository</a>
+                    <h2 class="center">Artist Portfolio Website</h2>
                 </div>
-            </section>
-        </div>
-        
-        <div class="case-study">
-            <div class="prototyping case-study-grid">
-                <div>
-                    <h2>Ideation & <br>Prototyping</h2>
-                    <p>Since this is a new site, I did not have a website to improve upon. I first thought of what the client would need the website to contain, the most important being: a collection of his work, ecommerce capabilities for selling prints, and information about gallery shows. My goals with the UI were to make something eyecatching and creative while also keeping the user in mind and creating an ease of usability.</p>
-                </div>
-                <img src="./images/colors-type.png" alt="">
-                <img src="./images/colors-type.png" alt="">
-            </div>
-            <div class="styling case-study-grid">
-                <img src="./images/colors-type.png" alt="">
-                <img src="./images/components-page.png" alt="">
-                <div class="flex-text">
-                    <h2>Style</h2>
-                    <p>I based the style of the website off of the nature of van Gogh's work. I pulled colors and motion from his paintings to incorporate into the typography and components of the site. I focused particularly on <em>Wheat Field With Cypresses</em> because I believed this painting to be representative of his work in terms of color and brush stroke. I also picked a background color representative on archival canvas.</p>
+
+                <div class="case-study travel-client">
+                    <div class="case-img-div travel-client-img"></div>
                     <br>
-                    <img src="./images/components.jpg" alt="">
+                    <h2 class="center">Client Travel Website</h2>
+                </div>
+
+                <div class="case-study travel-client">
+                    <div class="case-img-div mold-client-img"></div>
+                    <br>
+                    <h2 class="center">Client Service Website</h2>
                 </div>
             </div>
-            <div class="bringing-tog case-study-grid">
-                <div>
-                    <h2>Interactivity & Bringing it Together</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <img src="./images/colors-type.png" alt="">
-                <img src="./images/colors-type.png" alt="">
-            </div>
-        </div>
-    </main>
+            <br>
+        </section>
+<br>
 
         <section id="contact">
-            <hr class="solid">
             <h2 class="contact-title">Contact</h2>
             <div class="contact">
                 <div class="contact-box">
@@ -116,6 +83,7 @@
             </div>
             <hr class="solid">
         </section>
+    </main>
 
     <footer>
         <section>

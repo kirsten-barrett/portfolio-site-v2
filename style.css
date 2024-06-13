@@ -486,10 +486,18 @@ footer {
     font-weight: 300;
     font-size: 1.1rem;
 }
-.van-gogh-page h1, .van-gogh-page h2 {
+.van-gogh-page h1, .van-gogh-page h2, .van-gogh-page h3 {
     font-family: "Kalnia", serif;
     font-weight: 500;
+}
+.van-gogh-page h1 {
+    font-size: 3rem;
+}
+.van-gogh-page h2 {
     font-size: 2.5rem;
+}
+.van-gogh-page h3 {
+    font-size: 2rem;
 }
 .black {
     background-color: #edebe4;
@@ -497,9 +505,13 @@ footer {
 }
 .van-gogh-section h2 {
     font-size: 3.2rem;
+    padding-bottom: 1rem;
 }
 .van-gogh-intro {
     width: 75%;
+}
+.disclaimer {
+    padding-top: 40px;
 }
 .objectives {
     padding-bottom: 10px;
@@ -521,8 +533,39 @@ footer {
     row-gap: 40px;
     justify-content: center;
 }
+@media only screen and (max-width: 900px) {
+    .grid-imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .black .flex-btns {
     justify-content: left;
+}
+.grid-imgs img {
+    max-width: 400px;
+}
+.styling {
+    background-color: #edebe4;
+    color:#000;
+}
+.van-gogh-section img {
+    border: 0.5px solid #000;
+}
+.grid-text img {
+    max-width: 450px;
+}
+.grid-text ul {
+    margin-left: 40px;
+}
+.prototyping, .styling, .bringing-tog {
+    padding: 100px 40px;
+}
+.flex-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 517px;
 }
 @media only screen and (max-width: 1380px) {
     .van-gogh-grid {
@@ -532,7 +575,7 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column-reverse;
     }
-    .van-gogh-page h2, .van-gogh-page p, .van-gogh-page li, .van-gogh-page li icon {
+    .van-gogh-page h2, .van-gogh-page h1, .van-gogh-page h3, .van-gogh-page p {
        text-align: center;
     }
     .components-img {
@@ -551,32 +594,9 @@ footer {
     .black .flex-btns {
         justify-content: center;
     }
-}
-.grid-imgs img {
-    max-width: 400px;
-    height: auto;
-}
-.styling {
-    background-color: #edebe4;
-    color:#000;
-}
-.styling img {
-    border: 0.5px solid #000;
-}
-.grid-text img {
-    max-width: 450px;
-}
-.prototyping, .styling, .bringing-tog {
-    padding: 100px 40px;
-}
-@media only screen and (max-width: 600px) {
-    .van-gogh-intro {
-        width: 100%;
+    .flex-text {
+        height: auto;
     }
-}
-.flex-text {
-    display: flex;
-    flex-direction: column;
 }
 .btn {
     text-decoration: none;
